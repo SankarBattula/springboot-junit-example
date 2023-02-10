@@ -14,11 +14,13 @@ The first thing you can do is write a simple sanity check test that will fail if
 
 @SpringBootTest
 public class TestingWebApplicationTests {
+
 	@Test
 		public void contextLoads() {
 	}
 
 }
+
 ---------------------
 The @SpringBootTest annotation tells Spring Boot to look for a main configuration class (one with @SpringBootApplication, for instance) and use that to start a Spring application context. 
 You can run this test in your IDE or on the command line (by running ./mvnw test or ./gradlew test), and it should pass.
@@ -26,6 +28,7 @@ To convince yourself that the context is creating your controller, you could add
 
 @SpringBootTest
 public class SmokeTest {
+
 	@Autowired
 	private HomeController controller;
 
