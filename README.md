@@ -14,9 +14,8 @@ The first thing you can do is write a simple sanity check test that will fail if
 
 @SpringBootTest
 public class TestingWebApplicationTests {
-
 	@Test
-	public void contextLoads() {
+		public void contextLoads() {
 	}
 
 }
@@ -27,7 +26,6 @@ To convince yourself that the context is creating your controller, you could add
 
 @SpringBootTest
 public class SmokeTest {
-
 	@Autowired
 	private HomeController controller;
 
